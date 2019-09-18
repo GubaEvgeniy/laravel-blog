@@ -13,6 +13,9 @@
 
 Route::get('/', function () {
     return view('homepage');
-});
+})->name('home1');
 
 Route::get('/about', 'PageController@about');
+
+Route::get('/articles', 'ArticleController@index')
+    ->name('articles.index');

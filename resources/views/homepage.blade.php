@@ -9,12 +9,6 @@
 @section('content')
     <h1>Добро пожаловать</h1>
 
-    <ul>
-        <li>
-            <a href="/about">about</a>
-        </li>
-    </ul>
-
     <p>Главная страница блога</p>
 
 @endsection
