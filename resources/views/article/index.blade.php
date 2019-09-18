@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+    <a href="{{route('articles.create')}}">Создать новую статью</a>
+
+
     <h1>Список статей</h1>
     <div>
         <table>
@@ -14,7 +17,7 @@
             @foreach($articles as $article)
                 <tr>
                     <td>{{$article->id}}</td>
-                    <td>{{$article->name}}</td>
+                    <td><a href="{{route('articles.show', ['id' => $article->id])}}">{{$article->name}}</a></td>
                 </tr>
             @endforeach
             </tbody>
