@@ -18,6 +18,7 @@
                 <tr>
                     <td>{{$article->id}}</td>
                     <td><a href="{{route('articles.show', ['id' => $article->id])}}">{{$article->name}}</a></td>
+                    <td><a href="{{route('articles.edit', ['id' => $article->id])}}">Edit</a></td>
                 </tr>
             @endforeach
             </tbody>
